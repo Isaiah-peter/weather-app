@@ -1,13 +1,94 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'montseratt', sans-serif;
+}
+.App{
+  background-image: url(./asset/summer.jpg);
+  background-size: cover;
+  background-position: bottom ;
+  transition: 0.4 ease-in;
+}
+.App.winter{
+  background-image: url(./asset/winter.jpg);
+  background-size: cover;
+  background-position: bottom ;
+  transition: 0.4 ease-in;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main{
+ min-height: 100vh;
+ background-image:linear-gradient(to bottom rgba(0,0,0,0.2) rgba(0,0,0,0.75)) ;
+ padding: 25px;
+ 
+ 
+}
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.search-bar{
+  padding: 10px;
+  width: 100%;
+  font-size: 20px;
+  border:none ;
+  outline: none;
+  border-radius:0px 0px 16px 16px;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: -25px;
+  box-shadow:0px 5px rgba(0,0,0,0.2);
+  color: #313131;
+
+}
+.location-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:100px 100px 100px 0px;
+  flex-direction: column;
+}
+
+.location{
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 3px 3px rgba(50,50,70,0.75);
+}
+.date{
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 3px 3px rgba(50,50,70,0.2);
+}
+.weather-box .temp{
+  font-size: 102px;
+  border-radius: 10px ;
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.21);
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+  margin: 30px auto;
+  font-weight: 900;
+  box-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+.weather-box .weather{
+  font-size: 40px;
+  align-items: center;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+.weather-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
